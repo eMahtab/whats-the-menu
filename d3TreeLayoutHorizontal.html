@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<script src="d3.js" charset="utf-8"></script>
+<style>
+svg{
+    display: block;
+    margin: auto;
+	
+}
+</style>
+</head>
+
+<body> 
+
+<script>
+    
+   var width=1200;
+   var height=640;
+   
+   var canvas=d3.select("body")
+                .append("svg")
+				.attr("width",width)
+				.attr("height",height)
+				.append("g")
+				.attr("transform","translate(50,50)");
+				
+	var tree=d3.layout.tree()
+                .size([590,900]);
+
+    d3.json("menu.json",function(data){	   
+	   var nodes=tree.nodes(data);
+	   console.log(nodes);
+	   var links=tree.links(nodes);
+	   
+	   var node=canvas.selectAll(".node")
+	                  .data(nodes)
+					  .enter()
+					  .append("g")
+					  .attr("class","node")
+					  .attr("transform",function(d){ return "translate("+d.y+","+d.x+")"; })
+					  
+       node.append("circle")
+           .attr("r",5)
+           .attr("fill","steelblue"); 	
+
+      node.append("text")
+          .text(function(d) {return d.name;})	
+		  .attr("x", function(d) { 
+                             return d.children || d._children ? -10 : 10; })
+		  .attr("y", function(d) { 
+                             return d.children || d._children ? -8 : 4; })					 
+
+	  var diagonal=d3.svg.diagonal()
+	                     .projection(function (d){return [d.y,d.x]; });	  
+		  
+      canvas.selectAll(".link")
+            .data(links)
+            .enter()
+            .append("path") 	
+            .attr("class","link")
+            .attr("fill","none")
+            .attr("stroke","black")
+            .attr("d",diagonal) ;			
+			
+	   
+	})				
+
+	
+</script>	
+
+</body>
+
+
+
+</html>

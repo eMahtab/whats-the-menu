@@ -1,0 +1,117 @@
+{
+    "name": "Hyderabadi Biriyani House",
+    "children": [
+                                   {
+                                       "name": "Starters",                                      
+                                       "children": [
+                                                        {
+                                                        "name": "Veg",
+                                                        "children":[
+                                                                     {"name":"Paneer-65"},
+                                                                     {"name":"Aloo-65"},
+                                                                     {"name":"Gobi-65"},
+                                                                     {"name":"Chilly Garlic Mushroom"},
+                                                                     {"name":"Chilly Paneer"},
+                                                                     {"name":"Paneer Manchurian"}
+                                                                   ]    
+                                                        },                                           
+                                                         {
+                                                        "name": "Non-Veg",
+                                                        "children":[
+                                                                     {"name":"Chilly Chicken"},
+                                                                     {"name":"Chicken Manchurian"},
+                                                                     {"name":"Chicken Salt and Pepper"},
+                                                                     {"name":"Chilly Garlic Prawn"},
+                                                                     {"name":"Chicken Drumstick"}
+                                                                   ]    
+                                                        }
+                                                   ]
+                                   },
+     
+                                   {
+                                       "name": "Soups",                                       
+									    "children": [
+                                                        {
+                                                        "name": "Veg",
+                                                        "children":[
+                                                                     {"name":"Lemon Corriander Soup"},
+                                                                     {"name":"Sweet Corn Soup"},
+                                                                     {"name":"Clear Soup"},
+                                                                     {"name":"Talumein Soup"}
+                                                                   ]    
+                                                        },                                           
+                                                         {
+                                                        "name": "Non-Veg",
+                                                        "children":[
+                                                                     {"name":"Chicken Lemon Corriander Soup"},
+                                                                     {"name":"Chicken Corn Soup"},
+                                                                     {"name":"Chicken Clear Soup"},
+                                                                     {"name":"Chicken Talumein Soup"}
+                                                                   ]    
+                                                        }
+                                                   ]
+                                   },
+                                   
+                                    {
+                                       "name": "Biriyani",                                      
+                                       "children": [
+                                                        {
+                                                        "name": "Chicken",
+                                                        "children":[
+                                                                     {"name":"Chicken Biriyani Regular"},
+                                                                     {"name":"Chicken Biriyani Family"},
+                                                                     {"name":"Chicken Biriyani Jumbo Family"} 
+                                                                   ]    
+                                                        },                                           
+                                                         {
+                                                        "name": "Mutton",
+                                                        "children":[
+                                                                     {"name":"Mutton Biriyani Regular"},
+                                                                     {"name":"Mutton Biriyani Family"},
+                                                                     {"name":"Mutton Biriyani Jumbo Family"} 
+                                                                   ]    
+                                                        }
+                                                   ]
+                                   },
+        
+                                    {
+                                       "name": "Mutton",                                       
+									    "children": [
+                                                                     {"name":"Bhunava Ghost"},
+                                                                     {"name":"Mutton Korma"},
+                                                                     {"name":"Mutton Pepper Fry"},
+                                                                     {"name":"Kadai Ghost"},
+                                                                     {"name":"Mutton Roghan Josh"},
+                                                                     {"name":"Mutton Do Pyazza"}
+                                                   ]
+                                    },
+        
+                                    {
+                                       "name": "Chicken",                                       
+									    "children": [
+                                                                     {"name":"Butter Chicken"},
+                                                                     {"name":"Kadai Chicken"},
+                                                                     {"name":"Chicken Korma"},
+                                                                     {"name":"Moghlai Chicken"},
+                                                                     {"name":"Lemon Chicken"},
+                                                                     {"name":"Chicken Bhartha"}
+                                                   ]
+                                    },
+        
+                                   {
+                                       "name": "Tandoor",                                       
+									    "children": [
+                                                                     {"name":"Reshmi Kebab"},
+                                                                     {"name":"Chicken Tikka"},
+                                                                     {"name":"Paneer Tikka"},
+                                                                     {"name":"Banjara Kebab"},
+                                                                     {"name":"Chicken Seek Kebab"},
+                                                                     {"name":"Mushroom Tandoori"}
+                                                   ]
+                                    }
+        
+                                 
+								   
+                                  
+                ]
+}
